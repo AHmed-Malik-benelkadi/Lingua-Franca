@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,14 +7,16 @@
     <script src="https://kit.fontawesome.com/f1aff2a005.js" crossorigin="anonymous"></script>
     <script src="../static/script.js"></script>
 
-    <link rel="stylesheet" href="../static/style.css"/>
+<link rel="stylesheet" href="../static/style.css"/>
 
-    <title>Translate Application</title>
+<title>Translate Application</title>
 </head>
 <body>
-    {% block content %}
+    <header>
+        <h1>Translate Application</h1>
+    </header>
+    <main>
         <div class="container">
-            <h1>Translate Application</h1>
             <div class="container_area">
                 <div class="input_">
                     <label for="src_language">Source Language:</label>
@@ -27,9 +28,11 @@
                             {% endfor %}
                         </select>
                     </div>
-                    <textarea id="input_data" name="input_text" rows="5" cols="33"></textarea>
+                    <textarea id="input_data" name="input_text" rows="5" cols="33" placeholder="Enter text to translate"></textarea>
                 </div>
-                <div class="icon"></div>
+                <div class="icon">
+                    <i id="iconElement" class="fas fa-exchange-alt icon-rotate" onclick="invertLanguages()" title="Invert Languages"></i>
+                </div>
                 <div class="result_">
                     <label for="dest_language">Destination Language:</label>
                     <div class="select">
@@ -40,17 +43,18 @@
                             {% endfor %}
                         </select>
                     </div>
-                    <textarea id="output_text" name="output_text" rows="5" cols="33"></textarea>
+                    <textarea id="output_text" name="output_text" rows="5" cols="33" placeholder="Translated text"></textarea>
                 </div>
             </div>
             <p id="sugg"></p>
             <p id="msg_error"></p>
-            <div class="button_translate"><button onclick="fetchData()">Translate</button></div>
+            <div class="button_translate">
+                <button onclick="fetchData()">Translate</button>
+            </div>
             <div id="detect_src_container">Detected language: <span id="detect_src"></span></div>
             <div id="link_detect_src_container"><a id="link_detect_src"></a></div>
         </div>
-
-    {% endblock %}
+    </main>
 
 </body>
 </html>
