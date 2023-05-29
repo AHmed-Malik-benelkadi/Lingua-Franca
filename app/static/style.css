@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html {
+  box-sizing: border-box;
+  background-color: lightskyblue;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+textarea {
+  display: block;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 660px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container_area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+}
+
+.icon {
+  align-self: flex-start;
+  padding: 15px;
+}
+
+.icon i {
+  color: #4285f4;
+}
+
+.container h1 {
+  margin: 40px 0 60px 0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #333;
+}
+
+.button_translate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_translate button {
+  cursor: pointer;
+  margin: 74px 0;
+  background-color: #4285f4;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.button_translate button:hover {
+  background-color: #3367d6;
+}
+
+.container_area .select {
+  padding: 15px 0;
+}
+
+.container_area select {
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  outline: 0;
+  padding: 8px;
+  font-size: 14px;
+  background-color: #f2f2f2;
+  color: #333;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container_area textarea {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin: 5px;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #f2f2f2;
+  color: #333;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#msg_error {
+  margin: 15px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #d50000;
+}
+
+#sugg {
+  color: #777;
+  margin:  -13px 62px 20px 138px;
+  font-size: 13px;
+  text-align: left;
+}
+
+#sugg a {
+  color: #4285f4;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#sugg a:hover {
+  color: #3367d6;
+}

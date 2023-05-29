@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f1aff2a005.js" crossorigin="anonymous"></script>
+    <script src="../static/script.js"></script>
+
+    <link rel="stylesheet" href="../static/style.css"/>
+
+    <title>Translate Application</title>
+</head>
+<body>
+    {% block content %}
+        <div class="container">
+            <h1>Translate Application</h1>
+            <div class="container_area">
+                <div class="input_">
+                    <label for="src_language">Source Language:</label>
+                    <div class="select">
+                        <select name="languages" id="src_language">
+                            <option value="auto">Automatic detection</option>
+                            {% for language in languages %}
+                            <option value="{{ language }}">{{ language }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <textarea id="input_data" name="input_text" rows="5" cols="33"></textarea>
+                </div>
+                <div class="icon"></div>
+                <div class="result_">
+                    <label for="dest_language">Destination Language:</label>
+                    <div class="select">
+                        <select name="languages" id="dest_language">
+                            <option value="select">Select language</option>
+                            {% for language in languages %}
+                            <option value="{{ language }}">{{ language }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <textarea id="output_text" name="output_text" rows="5" cols="33"></textarea>
+                </div>
+            </div>
+            <p id="sugg"></p>
+            <p id="msg_error"></p>
+            <div class="button_translate"><button onclick="fetchData()">Translate</button></div>
+            <div id="detect_src_container">Detected language: <span id="detect_src"></span></div>
+            <div id="link_detect_src_container"><a id="link_detect_src"></a></div>
+        </div>
+
+    {% endblock %}
+
+</body>
+</html>
