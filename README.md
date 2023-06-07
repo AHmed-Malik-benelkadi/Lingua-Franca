@@ -58,6 +58,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 This project was developed as a part of the La Plateforme programming challenge. 
 
-If you have any questions or need further assistance, please don't hesitate to reach out. Enjoy translating!
+If you have any questions or need further assistance, please don't hesitate to reach out. Enjoy translating! <br>
+
 ![Capture d’écran 2023-06-07 121219](https://github.com/AHmed-Malik-benelkadi/Lingua-Franca/assets/115155554/2e476cf0-00df-41b5-a487-885cb9d40362)
 
