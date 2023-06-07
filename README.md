@@ -59,4 +59,4 @@ This project is licensed under the [MIT License](LICENSE).
 This project was developed as a part of the La Plateforme programming challenge. 
 
 If you have any questions or need further assistance, please don't hesitate to reach out. Enjoy translating!
-
+![Capture d’écran 2023-06-07 121219.png](Capture%20d%92%E9cran%202023-06-07%20121219.png)
