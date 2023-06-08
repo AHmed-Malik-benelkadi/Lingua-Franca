@@ -3,7 +3,7 @@ html {
   background-color: #f1f3f4;
 }
 h1 {
-  margin: 0 auto 40px; /* Ajouter "auto" pour centrer horizontalement */
+  margin: 0 auto 40px;
   text-align: center;
   font-size: 28px;
   font-weight: bold;

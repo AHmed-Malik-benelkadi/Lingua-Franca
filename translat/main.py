@@ -5,7 +5,7 @@ app = Flask(__name__, template_folder='template', static_folder='static')
 translator = Translator()
 
 @app.route('/', methods=['GET'])
-def index():
+def translat():
     if request.method == 'GET':
         input_text = request.args.get('inputData')
         source_language = request.args.get('srcLanguage')

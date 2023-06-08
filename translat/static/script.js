@@ -9,7 +9,6 @@ function fetchData() {
     para.textContent = "Please select the destination language!";
     return;
   }
-
   if (inputData.value === "") {
     para.textContent = "Please complete the text area!";
     return;
